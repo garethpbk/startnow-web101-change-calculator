@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Change Calculator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.png" />
+  </head>
+  <body>
+    <!-- Write your markup here -->
+
+    <div class="container has-text-centered">
+
+      <h1 class="title is-size-1 has-margin-top">Change Calculator</h1>
+
+      <div id="inputs" class="has-margin-top">
+        <div class="columns">
+          <label for="amount-due" class="column has-text-left card has-text-weight-bold has-margin-right">
+            How much is due?<br />
+            <input id="amount-due" class="is-full-width" name="amount-due" type="text" value="" />
+          </label>
+
+          <label for="amount-received" class="column has-text-left card has-text-weight-bold has-margin-right">
+            How much was received?<br />
+            <input id="amount-received"  class="is-full-width" name="amount-received" type="text" value="" />
+          </label>
+
+          <button id="calculate-change" class="column button is-primary has-text-weight-bold is-size-4">Click n' Calculate</button>
+        </div>
+      </div>
+
+      <div id="output" class="has-margin-top">
+
+        <div class="columns">
+
+          <div class="column is-half card has-margin-right is-size-3">
+            <h2 class="has-text-weight-bold"><p id="dollars-output" class="is-inline-block">?</p> Dollars</h2>
+            <div id="dollars-img" class="has-text-centered"></div>
+          </div>
+
+          <div class="column card is-size-4 has-text-centered">
+            
+            <div class="coin-area">
+              <h2 class="has-text-weight-bold"><p id="quarters-output" class="is-inline-block">?</p> Quarters</h2>
+              <div id="quarters-img" class="has-text-centered"></div>
+            </div>
+
+            <div class="coin-area">
+              <h2 class="has-text-weight-bold"><p id="dimes-output" class="is-inline-block">?</p> Dimes</h2>
+              <div id="dimes-img" class="has-text-centered"></div>
+            </div>
+
+            <div class="coin-area">
+              <h2 class="has-text-weight-bold is-block"><p id="nickels-output" class="is-inline-block">?</p> Nickels</h2>
+              <div id="nickels-img" class="has-text-centered"></div>
+            </div>
+
+            <div class="coin-area">
+              <h2 class="has-text-weight-bold"><p id="pennies-output" class="is-inline-block">?</p> Pennies</h2>
+              <div id="pennies-img" class="has-text-centered"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <h3 class="has-margin-top is-size-4 is-italic">Using the <a href="https://bulma.io/" target="_blank">Bulma</a> framework</h3>
+
+    </div>
+
+    <!-- Don't forget to add your <script> tag here -->
+      <script src="main.js"></script>
+  </body>
+</html>
